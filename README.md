@@ -1,6 +1,8 @@
 # daily-cash-book-react
 
-A React + Vite frontend for the **Daily Cash Book** app — a full rewrite of the original vanilla JS frontend, connected to the same Flask backend API.
+A React + Vite frontend for the **Daily Cash Book** app — a full rewrite of the original vanilla JS frontend, connected to the Flask backend API.
+
+> **Note:** This is a frontend-only repository. The Flask backend lives in a separate repo: [abhinavrajgupta/daily-cash-book](https://github.com/abhinavrajgupta/daily-cash-book)
 
 ---
 
@@ -9,7 +11,7 @@ A React + Vite frontend for the **Daily Cash Book** app — a full rewrite of th
 - **React 18** — component-based UI
 - **Vite** — fast dev server and bundler
 - **JavaScript (JSX)** — no TypeScript
-- **Flask** (backend, separate repo: `daily-cash-book`) — REST API
+- **Flask** (backend, separate repo) — REST API
 
 ---
 
@@ -44,13 +46,13 @@ daily-cash-book-react/
 
 - **Node.js** v18 or higher
 - **npm** v9 or higher
-- **Flask backend** running at `http://localhost:5000` (from the `daily-cash-book` repo)
+- **Flask backend** running at `http://localhost:5000` — clone and run [daily-cash-book](https://github.com/abhinavrajgupta/daily-cash-book) separately
 
 ---
 
 ## 🛠️ Getting Started
 
-### 1. Clone the repository
+### 1. Clone this repository
 
 ```bash
 git clone https://github.com/abhinavrajgupta/daily-cash-book-react.git
@@ -63,17 +65,7 @@ cd daily-cash-book-react
 npm install
 ```
 
-### 3. Start the Flask backend
-
-Make sure the original Flask backend is running on port 5000:
-
-```bash
-# In your daily-cash-book repo
-cd backend
-python server.py
-```
-
-### 4. Start the React dev server
+### 3. Start the React dev server
 
 ```bash
 npm run dev
@@ -81,7 +73,7 @@ npm run dev
 
 The app will be available at **http://localhost:5173**
 
-All `/api` requests are automatically proxied to `http://localhost:5000` via Vite.
+All `/api` requests are automatically proxied to `http://localhost:5000` via Vite — make sure the Flask backend is running.
 
 ---
 
